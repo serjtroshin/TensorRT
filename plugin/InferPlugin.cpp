@@ -41,6 +41,7 @@ using namespace nvinfer1::plugin;
 #include "lReluPlugin.h"
 #include "multilevelCropAndResizePlugin.h"
 #include "multilevelProposeROIPlugin.h"
+#include "mySeluPlugin.h"
 #include "nmsPlugin.h"
 #include "normalizePlugin.h"
 #include "nvFasterRCNNPlugin.h"
@@ -177,6 +178,7 @@ extern "C"
         initializePlugin<nvinfer1::plugin::LReluPluginCreator>(logger, libNamespace);
         initializePlugin<nvinfer1::plugin::MultilevelCropAndResizePluginCreator>(logger, libNamespace);
         initializePlugin<nvinfer1::plugin::MultilevelProposeROIPluginCreator>(logger, libNamespace);
+        initializePlugin<nvinfer1::plugin::mySeluPluginCreator>(logger, libNamespace);
         initializePlugin<nvinfer1::plugin::NMSPluginCreator>(logger, libNamespace);
         initializePlugin<nvinfer1::plugin::NMSDynamicPluginCreator>(logger, libNamespace);
         initializePlugin<nvinfer1::plugin::NormalizePluginCreator>(logger, libNamespace);

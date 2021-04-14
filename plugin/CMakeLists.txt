@@ -43,6 +43,7 @@ set(PLUGIN_LISTS
     leakyReluPlugin
     multilevelCropAndResizePlugin
     multilevelProposeROI
+    mySeluPlugin
     nmsPlugin
     normalizePlugin
     nvFasterRCNN
